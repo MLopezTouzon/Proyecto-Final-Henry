@@ -16,7 +16,7 @@ st.markdown('### Explicación del modelo y como funciona')
 
 
 # Datos de ejemplo (reemplázalos con tus propios datos)
-df_reseñas = pd.read_csv("reviews.csv")
+df_reseñas = pd.read_csv("reviews.csv", encoding="utf-8")
 
 # Preprocesamiento de texto y vectorización
 vectorizer = TfidfVectorizer(stop_words='english')
