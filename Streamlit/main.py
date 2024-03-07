@@ -9,14 +9,18 @@ import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 nltk.download('vader_lexicon')
 
-st.title('Análisis de Datos para Empresa de Taxis en ciudad de NY')
+st.title('TRANSPORTER')
+st.subheader('Transporter es nuestro sistema de IA, encargado de clasificar las reseñas de usuarios de taxis. Es capaz de clasificar el tipo de opinión vertida por los usuarios y además realiza un análisis de sentimiento.')
 
 st.markdown('***')
-st.markdown('Una empresa de servicios de transporte de pasajeros, especializada en micros de media y larga distancia, busca expandir sus operaciones al sector de transporte de pasajeros con automóviles. Con el objetivo de avanzar hacia un futuro más sostenible y adaptarse a las tendencias del mercado, la empresa pretende evaluar la relación entre los medios de transporte particulares y la calidad del aire, así como la contaminación sonora. El análisis preliminar se centrará en el movimiento de taxis en la ciudad de Nueva York como referencia para la posible implementación de vehículos eléctricos en la flota.')
-
-st.markdown('***')
-st.markdown('# TRANSPORTER')
-st.markdown('### Explicación del modelo y como funciona')
+st.markdown('# ¿Cómo funciona Transporter?')
+st.markdown('''### El sistema de IA se alimenta de reseñas, las cuales procesa y clasifica con el algoritmo Decision Tree Classifier, devolviendo la categoría en la cual se ajusta la reseña:
+- Recomendación Generales
+- Recomendación por el buen servicio del conductor 
+- Recomendación por el buen estado del vehículo 
+- Quejas por el mal servicio del conductor 
+Luego con la herramienta Sentiment Intensity Analyzer realiza una análisis de sentimiento, el cual puede ser: positivo, negativo o neutro.
+''')
 
 
 sia = SentimentIntensityAnalyzer()
