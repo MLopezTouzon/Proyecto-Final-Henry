@@ -9,7 +9,16 @@ import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 nltk.download('vader_lexicon')
 
-st.title('TRANSPORTER')
+st.markdown("""
+    <style>
+        .centered_title {
+            text-align: center;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+st.markdown("<h1 class='centered_title'>TRANSPORTER</h1>",
+            unsafe_allow_html=True)
 st.markdown('Transporter es nuestro sistema de IA, encargado de clasificar las reseñas de usuarios de taxis. Es capaz de clasificar el tipo de opinión vertida por los usuarios y además realiza un análisis de sentimiento.')
 
 st.markdown('***')
