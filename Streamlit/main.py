@@ -22,7 +22,7 @@ st.markdown("<h1 class='centered_title'>TRANSPORTER</h1>",
 st.markdown('Transporter es nuestro sistema de IA, encargado de clasificar las reseñas de usuarios de taxis. Es capaz de clasificar el tipo de opinión vertida por los usuarios y además realiza un análisis de sentimiento.')
 
 st.markdown('***')
-st.markdown('# ¿Cómo funciona Transporter?')
+st.markdown('## ¿Cómo funciona Transporter?')
 st.markdown('''El sistema de IA se alimenta de reseñas, las cuales procesa y clasifica con el algoritmo Decision Tree Classifier, devolviendo la categoría en la cual se ajusta la reseña:
 - Recomendación Generales
 - Recomendación por el buen servicio del conductor 
@@ -73,7 +73,7 @@ tree_classifier.fit(X_train, y_train)
 
 
 def main():
-    st.title("Clasificación de Reseñas")
+    st.markdown("### Clasificación de Reseñas")
 
     # Textbox para que el usuario ingrese una reseña
     reseña = st.text_area("Ingresa una reseña en inglés:")
