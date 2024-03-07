@@ -10,11 +10,11 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 nltk.download('vader_lexicon')
 
 st.title('TRANSPORTER')
-st.subheader('Transporter es nuestro sistema de IA, encargado de clasificar las reseñas de usuarios de taxis. Es capaz de clasificar el tipo de opinión vertida por los usuarios y además realiza un análisis de sentimiento.')
+st.markdown('Transporter es nuestro sistema de IA, encargado de clasificar las reseñas de usuarios de taxis. Es capaz de clasificar el tipo de opinión vertida por los usuarios y además realiza un análisis de sentimiento.')
 
 st.markdown('***')
 st.markdown('# ¿Cómo funciona Transporter?')
-st.markdown('''### El sistema de IA se alimenta de reseñas, las cuales procesa y clasifica con el algoritmo Decision Tree Classifier, devolviendo la categoría en la cual se ajusta la reseña:
+st.markdown('''El sistema de IA se alimenta de reseñas, las cuales procesa y clasifica con el algoritmo Decision Tree Classifier, devolviendo la categoría en la cual se ajusta la reseña:
 - Recomendación Generales
 - Recomendación por el buen servicio del conductor 
 - Recomendación por el buen estado del vehículo 
